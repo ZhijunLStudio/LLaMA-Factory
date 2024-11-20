@@ -1,0 +1,5 @@
+# webui
+conda activate llm && CUDA_VISIBLE_DEVICES=1 USE_MODELSCOPE_HUB=1 TMPDIR="./tmp" llamafactory-cli webui
+
+# api调用
+conda activate llm && CUDA_VISIBLE_DEVICES=2 USE_MODELSCOPE_HUB=1 TMPDIR="./tmp" API_PORT=37000  llamafactory-cli api examples/inference/qwen2_vl_lzj.yaml
